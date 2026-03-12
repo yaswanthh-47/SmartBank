@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartBank 🏦</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bank-container">
+      <h2>QuickBank 🏦</h2>
+      <div class="balance-display" id="balance">Current Balance: ₹10000</div>
+
+      <input type="number" id="amount" placeholder="Enter amount" />
+
+      <div>
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+      </div>
+
+      <div>
+        <input
+          type="number"
+          id="rate"
+          placeholder="Interest Rate (default 5%)"
+        />
+        <input type="number" id="years" placeholder="Years (default 1)" />
+        <button class="interest" onclick="calculateInterest()">Interest</button>
+      </div>
+
+      <button class="exit" onclick="exitBank()">Exit</button>
+
+      <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
